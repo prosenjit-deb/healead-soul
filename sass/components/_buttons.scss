@@ -1,0 +1,74 @@
+.btn{
+	background: $orange-text;
+	border-radius: 0;
+	font-size: 2rem;
+	line-height: normal;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: 700;
+	border: 0;
+	padding: 1.8rem;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 442px;
+	margin: 0 auto;
+	@include md {
+		font-size: 1.2rem;
+		height: 70px;
+	}
+	&:hover{
+		background: $black;
+		text-decoration: none;
+	}
+	&:focus,
+	&:active{
+		border: 0 !important;
+		outline: 0 !important;
+		box-shadow: none !important;
+	}
+	&:after{
+		content: '';
+		width: 90%;
+		height: 14px;
+		background: url(../../images/btn-effect-bg.png) no-repeat;
+		background-size: 100%;
+		position: absolute;
+		left: 50%;
+		bottom: -14px;
+		transform: translateX(-50%);
+	}
+	&.btn-red{
+		font-size: 1.3rem;
+		background: #d51f11;
+		@include md {
+			font-size: 1.15rem;
+		}
+		&:hover{
+			background: $black;
+			text-decoration: none;
+		}
+	}
+	&.btn-green{
+		background: #1ea305;
+		&:hover{
+			background: $black;
+			text-decoration: none;
+		}
+	}
+}
+
+.btn-sec-area{
+	padding: 7rem 0;
+	@include sm {
+		padding: 3rem 0 0;
+	}
+}
+.br-none{
+	br{
+		@include sm {
+			display: none;
+		}
+	}
+}

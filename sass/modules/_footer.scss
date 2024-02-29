@@ -1,0 +1,111 @@
+.section-footer{
+	padding-bottom: 0 !important;
+	background: url(../../images/footer-bg.jpg) no-repeat 0% 100% #fff;
+	background-size: 100%;
+	&.upsell-footer{
+		background: url(../../images/upsell-footer-bg.jpg) no-repeat 0% 0% #fff;
+		background-size: cover;
+	}
+	.footer-box{
+		background: $white;
+		border: solid 1px $white;
+		box-shadow: 0px 0px 111px 0 rgba(0, 0, 0, 0.21);
+		padding: 6rem;
+		text-align: center;
+		@include sm {
+			padding: 2rem;
+		}
+		h2{
+			padding: 0 4rem;
+			margin-bottom: 3rem;
+			@include sm {
+				padding: 0;
+				margin-bottom: 3rem;
+			}
+			span{
+				color: $orange-text;
+				display: block;
+				width: 100%;
+			}
+		}
+		.cta-btn{
+			margin-top: 4rem;
+			.btn{
+				margin-bottom: 2rem;
+			}
+			p{
+				font-size: 18px;
+				color: $black;
+				font-weight: 600;
+				text-transform: uppercase;
+				@include sm {
+					font-size: 1rem;
+				}
+				a{
+					color: $orange-text;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		padding: 2.1rem 0;
+		@include sm {
+			padding: 1rem 0;
+		}
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			li{
+				padding: 0 1.5rem;
+				position: relative;
+				@include sm {
+					padding: 0 1rem;
+				}
+				&:before{
+					content: '';
+					width: 2px;
+					height: 80%;
+					background: $white;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					@include sm {
+						height: 50%;
+						width: 1px;
+					}
+				}
+				&:nth-child(1){
+					&:before{
+						display: none;
+					}
+				}
+				a{
+					color: $white;
+					font-size: 1.25rem;
+					@include sm {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		p{
+			text-align: center;
+			color: $white;
+			font-size: 1.25rem;
+			line-height: normal;
+			margin-bottom: 0;
+			margin-top: 1.5rem;
+			@include sm {
+				font-size: 14px;
+				margin-top: 1rem;
+			}
+			a{
+				color: $orange-text;
+			}
+		}
+	}
+}

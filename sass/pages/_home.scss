@@ -1,0 +1,145 @@
+.home{
+	.c-header{
+		@include md {
+			background-size: 330%;
+		}
+	}
+}
+.section{
+	padding: 7.5rem 0;
+	@include sm {
+		padding: 3rem 0;
+	}
+	&-one{
+		background: $orange-text;
+		h2{
+			color: $white;
+			margin-bottom: 3rem;
+		}
+		p{
+			color: $white;
+			margin-bottom: 0;
+		}
+	}
+	&-two{
+		background: url(../../images/section-two-bg.jpg) no-repeat;
+		background-size: cover;
+		background-position: 65% 0%;
+		h2{
+			&.mb-h2{
+				margin-bottom: 4.1rem;
+				@include sm {
+					margin-bottom: 1.5rem;
+				}
+			}
+			span{
+				color: $orange-text;
+			}
+		}
+	}
+	&-three{
+		&-img{
+			left: -5rem;
+			position: relative;
+		}
+		h2{
+			&.mb-h2{
+				margin-bottom: 3rem;
+				@include sm {
+					margin-bottom: 1.5rem;
+				}
+			}
+			span{
+				color: $orange-text;
+				display: block;
+				width: 100%;
+			}
+		}
+		p{
+			&:last-child{
+				@include sm {
+					margin-bottom: 0rem;
+				}
+			}
+		}
+	}
+	&-four{
+		background-color: #f6f6f6;
+	}
+	&-five{
+		.c-header-title{
+			text-align: left;
+		}
+	}
+	&-six{
+		background: url(../../images/sec-6-img.jpg) no-repeat;
+		background-size: cover;
+		background-position: 0% 0%;
+		.container{
+			@include md {
+				background: rgba(255, 255, 255, 0.5);
+				padding-top: 2rem;
+			}
+		}
+		p{
+			text-align: center;
+		}
+	}
+	&-seven{
+		background-color: $orange-text;
+		padding: 2rem 0;
+		@include sm {
+
+		}
+		.img-wrap{
+			@include sm {
+				text-align: center;
+			}
+		}
+		p{
+			color: $white;
+			@include sm {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+//upsell 1 page
+.video-link{
+	background: #f7f7f7;
+	padding: 1.1rem;
+	border-top: solid 3px #e8e8e8;
+	border-radius: 40px;
+	max-width: 850px;
+	margin: 0 auto 0rem;
+	overflow: hidden;
+	@include md {
+		padding: 10px 1rem;
+	}
+	a{
+		color: #016cbe;
+		font-size: 1.2rem;
+		line-height: normal;
+		&:hover{
+			color: $black;
+		}
+	}
+}
+
+//upsell 2 page
+.upsell-two{
+	background: $white;
+	border: solid 1px $white;
+	box-shadow: 5px 5px 70px 0 rgba(0, 0, 0, 0.25);
+	padding: 8rem 6rem;
+	text-align: center;
+	margin-top: 2.5rem;
+	@include sm {
+		padding: 3rem 1rem;
+	}
+	&-img{
+		padding-bottom: 4rem;
+	}
+}
