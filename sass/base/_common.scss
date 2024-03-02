@@ -136,8 +136,8 @@ h1, .h1{
 
 h2, .h2 {
   font-size: 2.7rem;
+  font-family: $primary-font;
   line-height: 3rem;
-  font-family: $secondary-font;
   color: $black-one;
   @include xl {
 		font-size: 2.2rem;
