@@ -139,6 +139,7 @@ h2, .h2 {
   font-family: $primary-font;
   line-height: 3rem;
   color: $black-one;
+  font-weight: 700;
   @include xl {
 		font-size: 2.2rem;
     line-height: normal;
